@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="70dp"
+        android:background="@color/gray_light4"
+        >
+
+        <ImageButton
+            android:id="@+id/imgButtonDownloadedcustome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circlebutton"
+            android:layout_gravity="center"
+            ></ImageButton>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="8.2"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:background="@color/gray_light4"
+        >
+
+        <TextView
+            android:id="@+id/txttitleforDownloaded"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Title"
+            android:textSize="16dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:scrollHorizontally="true"
+            android:maxLines="1"
+            ></TextView>
+
+        <ProgressBar
+
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_margin="5dp"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:id="@+id/Downloadedprogressbar"
+            android:visibility="visible"
+            android:progressDrawable="@drawable/progressbar_style"
+            android:drawable="@drawable/progressbar_style"
+            android:elevation="7dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

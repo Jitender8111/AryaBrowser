@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".SearchAutomaticallyforUrl">
+
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/SerachViewss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:queryHint="Enter Url or Search Here"
+        app:iconifiedByDefault="false"
+        ></androidx.appcompat.widget.SearchView>
+
+
+  <ListView
+      android:id="@+id/ListViewForSearcView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      ></ListView>
+
+</LinearLayout>

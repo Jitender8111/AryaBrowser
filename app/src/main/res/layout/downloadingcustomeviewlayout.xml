@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="10"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="70dp"
+        android:background="@color/gray_light4"
+        >
+
+     <ImageButton
+         android:id="@+id/imgButtonDownloadingcustome"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:background="@drawable/circlebutton"
+         android:layout_gravity="center"
+         ></ImageButton>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="8.2"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:background="@color/gray_light4"
+        >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="2"
+      android:orientation="horizontal"
+      >
+        <TextView
+            android:id="@+id/txttitleforDownloading"
+            android:layout_width="0dp"
+            android:layout_weight="1.7"
+            android:layout_height="30dp"
+            android:text="Title"
+            android:textSize="16dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:scrollHorizontally="true"
+            android:maxLines="1"
+            ></TextView>
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="30dp"
+          android:layout_weight="0.3"
+          android:hint="0%"
+          android:textSize="16dp"
+          android:layout_margin="3dp"
+          android:id="@+id/txtPerprogressshow"
+          ></TextView>
+  </LinearLayout>
+
+        <ProgressBar
+
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_margin="5dp"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:id="@+id/Downloadingprogressbar"
+            android:visibility="visible"
+            android:progressDrawable="@drawable/progressbar_style"
+            android:drawable="@drawable/progressbar_style"
+            android:elevation="7dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

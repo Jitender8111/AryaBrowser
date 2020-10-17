@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:elevation="4dp"
+    android:background="@drawable/popupwindowdecorated"
+    tools:context=".WindowPopup">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:elevation="6dp"
+       android:layout_weight="1"
+
+       >
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="Advance Features"
+           android:textSize="17dp"
+           android:gravity="center"></TextView>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:weightSum="6"
+        android:orientation="vertical"
+
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light2"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="5"
+            android:layout_margin="10dp"
+            >
+            <Button
+                android:id="@+id/btnNews"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/circlebutton"
+                android:text="News"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                ></Button>
+            <ImageButton
+                android:id="@+id/btnScanBarCode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_scanner_black_24dp"
+                android:background="@drawable/circlebutton"
+                ></ImageButton>
+
+
+            <ImageButton
+                android:id="@+id/btnShareurl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_share_black_24dp"
+                android:background="@drawable/circlebutton"
+                ></ImageButton>
+
+            <ImageButton
+                android:id="@+id/helpAndFeedback"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_feedback_black_24dp"
+                android:background="@drawable/circlebutton"
+                ></ImageButton>
+
+            <ImageButton
+                android:id="@+id/btnContactUs"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/circlebutton"
+                android:src="@drawable/ic_contact_mail_black_24dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                ></ImageButton>
+
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_weight="0.7"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/News"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/top_title_ScanBarCode"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/Shareurl"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                ></TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/helpandfeedback"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/contactus"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    ></TextView>
+
+        </LinearLayout>
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:weightSum="1"
+            android:orientation="vertical"
+            >
+       &lt;!&ndash; <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light"
+            ></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Direct Link"
+            android:textSize="13dp"
+
+            android:gravity="center"
+            ></TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light"
+            ></View>&ndash;&gt;
+
+        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="5"
+            android:layout_margin="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/btndownLoad"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/circlebutton"
+                android:src="@drawable/ic_file_download_black_24dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                ></ImageButton>
+
+            <Button
+                android:id="@+id/btnYoutube"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/youtubeiconimage"
+                ></Button>
+            <Button
+                android:id="@+id/btnMoviezflix"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/moviesflixround"
+                ></Button>
+
+            <Button
+                android:id="@+id/btnSarkariresult"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sarkariresulticon"
+                ></Button>
+            <Button
+                android:id="@+id/btnFacebook"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/facebookroundiconwhite"
+                ></Button>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_weight="0.7"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/top_title_download"
+                android:textSize="12dp"
+                android:gravity="center"
+                ></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/btnYoutube"
+                android:textSize="12dp"
+                android:gravity="center"
+                ></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/btnMoviezflix"
+                android:textSize="12dp"
+                android:gravity="center"
+                ></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/Sarkariresult"
+                android:textSize="12dp"
+                android:gravity="center"
+                ></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/btnFacebook"
+                android:textSize="12dp"
+                android:gravity="center"
+                ></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="5"
+            android:layout_margin="10dp"
+            >
+            <ImageButton
+                android:id="@+id/btnLiveTv"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:layout_height="match_parent"
+                android:background="@drawable/circlebutton"
+                android:src="@drawable/ic_live_tv_black_24dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                ></ImageButton>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_weight="0.7"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/top_title_LiveTv"
+                android:textSize="12dp"
+                android:layout_margin="7dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                ></TextView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:elevation="6dp"
+        android:orientation="vertical"
+
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light2"></View>
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/btndown"
+            android:background="@drawable/buttoncolorbackground"
+            ></Button>
+       <!-- <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+
+            android:layout_gravity="center"></ImageView>-->
+
+    </LinearLayout>
+
+
+</LinearLayout>
